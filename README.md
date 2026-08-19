@@ -34,6 +34,7 @@ gene-expression-explorer/
 ├── requirements.txt
 └── src/
     └── gene_analysis.py
+    └── gene_expression_plot.png
 ```
 
 ## Run
