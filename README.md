@@ -18,7 +18,7 @@ The goal is to explore common data analysis operations that are frequently used 
 
 ## Sample Visualization
 
-![Gene Expression Plot](gene_expression_plot.png)
+![Gene Expression Plot](src/gene_expression_plot.png)
 
 ## Technologies
 
