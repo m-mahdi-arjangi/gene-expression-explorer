@@ -1,105 +1,359 @@
 # Gene Expression Explorer 🧬
 
-A beginner-friendly Python project for exploring a small gene-expression matrix with **Pandas, NumPy, and Matplotlib**. It demonstrates data loading, quality checks, descriptive statistics, simple gene filtering, min–max normalization, and visualisation.
+**A Bioinformatics Research Project for Exploring Drought-Responsive Gene Expression in _Arabidopsis thaliana_.**
 
-> **Important:** The included CSV is a small, synthetic teaching dataset. It is not patient data, is not from a published biological study, and must not be used to draw medical or biological conclusions.
+Gene Expression Explorer is a Python and R-based bioinformatics project focused on processing gene expression data, investigating biological responses to environmental stress, and identifying differentially expressed genes through statistical analysis.
 
-## Features
+The project combines data science, computational biology, and statistical bioinformatics to build a reproducible workflow for gene expression analysis.
 
-- Load expression data from a CSV file.
-- Validate the expected table structure and numeric expression values.
-- Reject missing, non-numeric, duplicate, or non-finite values with clear errors.
-- Calculate mean and standard deviation for each gene across samples.
-- Rank genes by mean expression and filter genes using a configurable threshold.
-- Apply min–max normalization to expression values.
-- Save a mean-expression bar chart and an expression heatmap.
-- Run unit tests for the data loader.
+Its long-term vision is to evolve into an extensible bioinformatics research platform integrating machine learning, functional genomics, biological pathway analysis, and explainable artificial intelligence.
 
-## Project structure
+---
+
+## Research Overview
+
+The current research focuses on understanding the early molecular response of _Arabidopsis thaliana_ to drought stress.
+
+The project uses publicly available gene expression data from the NCBI Gene Expression Omnibus (GEO).
+
+| Property | Description |
+|---|---|
+| Organism | _Arabidopsis thaliana_ |
+| GEO Accession | GSE24177 |
+| Platform Accession | GPL10948 |
+| Research Area | Plant Molecular Biology |
+| Research Focus | Drought Stress Response |
+| Analysis | Differential Gene Expression |
+
+**Dataset:** [GSE24177 – NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE24177)
+
+**Platform:** [GPL10948 – NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL10948)
+
+### Experimental Groups
+
+The current analysis investigates the early response to moderate drought stress (Day 1).
+
+| Experimental Group | GEO Sample IDs |
+|---|---|
+| Well-watered Control | GSM596123, GSM596124 |
+| Moderate Drought | GSM596125, GSM596126 |
+
+Each experimental group contains two biological replicates.
+
+---
+
+## Key Features
+
+### Data Processing
+- Import and process gene expression data from GEO.
+- Parse GEO series matrix and platform annotation files.
+- Prepare structured gene expression matrices.
+- Validate expression values and sample metadata.
+- Organize raw and processed datasets.
+
+### Exploratory Data Analysis
+- Analyze gene expression distributions.
+- Calculate descriptive statistics.
+- Investigate sample-level expression patterns.
+- Perform Principal Component Analysis (PCA).
+- Generate sample correlation matrices.
+- Visualize gene expression profiles.
+
+### Differential Expression Analysis
+- Perform differential expression analysis using the Bioconductor `limma` package.
+- Estimate gene expression differences between experimental conditions.
+- Calculate moderated statistical significance.
+- Apply Benjamini-Hochberg multiple testing correction.
+- Identify upregulated and downregulated probes.
+
+### Gene Annotation
+- Map probe identifiers to gene identifiers.
+- Retrieve gene descriptions from GEO platform annotations.
+- Combine statistical results with biological annotations.
+- Generate annotated candidate gene tables.
+
+### Visualization and Reporting
+- Generate expression distribution plots.
+- Create expression heatmaps.
+- Visualize mean expression levels.
+- Generate PCA plots.
+- Visualize sample correlations.
+- Plot top differentially expressed candidates.
+- Export analysis results as CSV files.
+
+---
+
+## Analysis Workflow
+
+The project follows a reproducible multi-stage analysis workflow:
+
+1. **Data Acquisition:** Load the original GEO dataset and platform annotation.
+2. **Data Preparation:** Parse and organize the expression matrix.
+3. **Data Validation:** Verify sample identifiers and expression data.
+4. **Exploratory Analysis:** Investigate expression distributions and sample relationships.
+5. **Dimensionality Reduction:** Apply PCA to explore overall expression patterns.
+6. **Differential Expression:** Compare drought-treated samples against controls using `limma`.
+7. **Multiple Testing Correction:** Calculate adjusted p-values using the Benjamini-Hochberg method.
+8. **Gene Annotation:** Map probe identifiers to biological gene information.
+9. **Visualization:** Generate figures and export annotated results.
+
+---
+
+## Current Analysis Results
+
+The current Day 1 moderate drought comparison produced the following results:
+
+| Analysis Metric | Result |
+|---|---:|
+| Total analyzed probes | 21,461 |
+| Significant probes (Adjusted P-value < 0.05) | 192 |
+| Upregulated probes | 108 |
+| Downregulated probes | 84 |
+| Probes with mapped gene identifiers | 21,389 |
+
+The differential expression analysis uses the `limma` statistical framework.
+
+Annotated results are available in:
+
+- `results/limma_early_drought_results.csv`
+- `results/limma_early_drought_annotated.csv`
+
+Generated visualizations are stored in `results/figures/`.
+
+---
+
+## Project Structure
 
 ```text
 gene-expression-explorer/
+│
 ├── data/
-│   ├── sample_gene_expression.csv
+│   ├── raw/
+│   │   ├── GSE24177_series_matrix.txt.gz
+│   │   └── GPL10948_family.soft.gz
+│   │
+│   ├── processed/
+│   │   └── GSE24177_expression.csv
+│   │
+│   ├── metadata/
+│   │   └── sample_metadata.csv
+│   │
 │   └── README.md
+│
 ├── results/
-│   └── figures/             # Generated charts are saved here
+│   ├── figures/
+│   │   ├── expression_distribution.png
+│   │   ├── expression_heatmap.png
+│   │   ├── mean_expression.png
+│   │   ├── pca_samples.png
+│   │   ├── sample_correlation.png
+│   │   └── top_drought_genes.png
+│   │
+│   ├── limma_early_drought_results.csv
+│   └── limma_early_drought_annotated.csv
+│
 ├── src/
-│   ├── gene_analysis.py
+│   ├── annotate_drought_results.py
 │   ├── data_loader.py
-│   └── visualization.py
+│   ├── exploratory_analysis.py
+│   ├── geo_data_loader.py
+│   ├── limma_early_drought.R
+│   ├── plot_drought_results.py
+│   └── validate_geo_dataset.py
+│
 ├── tests/
-│   └── test_gene_analysis.py
-├── .gitignore
+│   └── test_data_loader.py
+│
+├── install_r_dependencies.R
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
-## Quick start
+---
 
-Python 3.10+ is recommended.
+## Technologies and Tools
 
-1. Clone this repository and open its folder.
-2. (Optional but recommended) Create and activate a virtual environment.
-3. Install dependencies:
+| Technology | Application |
+|---|---|
+| Python | Data processing and analysis |
+| NumPy | Numerical computation |
+| Pandas | Data manipulation |
+| Matplotlib | Scientific visualization |
+| Scikit-learn | Principal Component Analysis |
+| R | Statistical computing |
+| Bioconductor limma | Differential expression analysis |
+| NCBI GEO | Public gene expression datasets |
+| Git & GitHub | Version control and project development |
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+---
 
-4. Run the analysis:
+## Installation
 
-   ```bash
-   python src/gene_analysis.py
-   ```
+### Prerequisites
 
-5. Open the generated charts in `results/figures/`.
+- Python 3.11 or newer
+- R
+- Git
+- Bioconductor `limma` package
 
-## Input data format
+### 1. Clone the Repository
 
-The CSV file uses one row per gene and one column per sample. The first column must be named `gene_id`; remaining columns contain numeric expression values.
+```bash
+git clone https://github.com/m-mahdi-arjangi/gene-expression-explorer.git
 
-```csv
-gene_id,Sample_1,Sample_2,Sample_3
-Gene_A,12,15,18
-Gene_B,10,11,15
+cd gene-expression-explorer
 ```
 
-Use `data/sample_gene_expression.csv` as the example input. When using a real dataset, document its source, license, preprocessing, units, and sample/group metadata.
+### 2. Create a Python Virtual Environment
 
-## Example analyses
+```bash
+python -m venv .venv
+```
 
-The script reports:
-- dataset dimensions;
-- mean and standard deviation for each gene;
-- genes above a selected mean-expression threshold;
-- a min–max-normalized expression matrix;
-- a mean-expression bar chart and expression heatmap.
+Activate the environment on Windows:
 
-The default threshold is an exploratory filter, **not** a statistical significance test. This project does not yet perform differential-expression analysis, correct for multiple testing, or establish biomarkers.
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
 
-## Run tests
+Activate the environment on Linux or macOS:
 
-From the repository root:
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Python Dependencies
+
+```bash
+python -m pip install --upgrade pip
+
+python -m pip install -r requirements.txt
+```
+
+The Python dependencies include:
+
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+
+### 4. Install R Dependencies
+
+Run the following command from the repository root:
+
+```bash
+Rscript install_r_dependencies.R
+```
+
+This installation script uses BiocManager to install the Bioconductor `limma` package when necessary.
+
+---
+
+## Running the Analysis
+
+Run the following commands from the project root directory.
+
+### Step 1: Prepare the GEO Dataset
+
+```bash
+python src/geo_data_loader.py
+```
+
+### Step 2: Validate the Dataset
+
+```bash
+python src/validate_geo_dataset.py
+```
+
+### Step 3: Perform Exploratory Data Analysis
+
+```bash
+python src/exploratory_analysis.py
+```
+
+### Step 4: Perform Differential Expression Analysis
+
+```bash
+Rscript src/limma_early_drought.R
+```
+
+### Step 5: Annotate Differentially Expressed Probes
+
+```bash
+python src/annotate_drought_results.py
+```
+
+### Step 6: Generate Visualizations
+
+```bash
+python src/plot_drought_results.py
+```
+
+The resulting tables and figures are saved in the `results/` directory.
+
+---
+
+## Running Tests
+
+To execute the project's unit tests:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-## Limitations and next steps
+---
 
-This repository is an educational analysis workflow, not a validated biomedical tool. The current example dataset is synthetic and small. Useful next steps include using a documented public dataset, adding sample-group metadata, implementing an appropriate differential-expression workflow, and comparing results against established tools.
+## Development Roadmap
 
-## Technologies
+The long-term objective is to transform Gene Expression Explorer into a comprehensive bioinformatics research platform.
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- unittest
+Planned development directions include:
+
+### Advanced Statistical Bioinformatics
+- Analysis of additional drought conditions and experimental time points.
+- Advanced differential expression analysis.
+- Functional enrichment analysis.
+- Gene ontology and biological pathway investigation.
+
+### Machine Learning and Artificial Intelligence
+- Machine learning models for gene expression classification.
+- Feature selection and candidate biomarker prioritization.
+- Explainable AI for interpreting model predictions.
+- Comparison of different classification algorithms.
+
+### Systems Biology
+- Gene interaction network analysis.
+- Co-expression network construction.
+- Identification of important regulatory genes.
+- Investigation of biological pathways associated with environmental stress.
+
+### Research and Software Development
+- Validation using independent GEO datasets.
+- Reproducible end-to-end analysis pipelines.
+- Interactive dashboards for gene expression exploration.
+- Scalable architecture for additional organisms and experiments.
+
+---
+
+## Scientific Reference
+
+Harb, A., Krishnan, A., Ambavaram, M. M. R., & Pereira, A. (2010).
+
+*Molecular and physiological analysis of drought stress in Arabidopsis reveals early responses leading to acclimation in plant growth.*
+
+**Plant Physiology**, 154(3), 1254–1271.
+
+https://doi.org/10.1104/pp.110.161752
+
+Dataset: [GSE24177 – NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE24177)
+
+---
 
 ## Author
 
-**Mahdi Arjangi** — Computer Engineering student and Front-End Developer exploring Python, data science, and bioinformatics.
+**Mahdi Arjangi**
 
-- GitHub: [@m-mahdi-arjangi](https://github.com/m-mahdi-arjangi)
+Computer Engineering Student | Front-End Developer | Aspiring AI & Bioinformatics Researcher
+
+GitHub: [@m-mahdi-arjangi](https://github.com/m-mahdi-arjangi)

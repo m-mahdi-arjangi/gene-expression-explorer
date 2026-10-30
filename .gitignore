@@ -1,6 +1,28 @@
+﻿# Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+
+# Environment and secrets
 .env
+.env.*
+!.env.example
+
+# R temporary files
+.RData
+.Rhistory
+.Rproj.user/
+.Ruserdata
+
+# Editors
+.vscode/
+.idea/
+
+# Operating system
 .DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

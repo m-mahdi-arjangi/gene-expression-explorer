@@ -1,0 +1,13 @@
+sample_id,condition,timepoint,replicate,control_type
+GSM596123,control,day1,1,mDr
+GSM596124,control,day1,2,mDr
+GSM596125,moderate_drought,day1,1,mDr
+GSM596126,moderate_drought,day1,2,mDr
+GSM596127,control,day10,1,mDr
+GSM596128,control,day10,2,mDr
+GSM596129,moderate_drought,day10,1,mDr
+GSM596130,moderate_drought,day10,2,mDr
+GSM596131,control,wilting,1,pDr
+GSM596132,control,wilting,2,pDr
+GSM596133,progressive_drought,wilting,1,pDr
+GSM596134,progressive_drought,wilting,2,pDr
