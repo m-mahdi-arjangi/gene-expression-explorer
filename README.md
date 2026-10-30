@@ -1,8 +1,9 @@
+
 # Gene Expression Explorer 🧬
 
 **A Bioinformatics Research Project for Exploring Drought-Responsive Gene Expression in _Arabidopsis thaliana_.**
 
-Gene Expression Explorer is a Python and R-based bioinformatics project focused on processing gene expression data, investigating biological responses to environmental stress, and identifying differentially expressed genes through statistical analysis.
+Gene Expression Explorer is a Python and R-based bioinformatics project focused on processing gene expression data, investigating biological responses to environmental stress, and identifying differentially expressed probes through statistical analysis.
 
 The project combines data science, computational biology, and statistical bioinformatics to build a reproducible workflow for gene expression analysis.
 
@@ -23,7 +24,7 @@ The project uses publicly available gene expression data from the NCBI Gene Expr
 | Platform Accession | GPL10948 |
 | Research Area | Plant Molecular Biology |
 | Research Focus | Drought Stress Response |
-| Analysis | Differential Gene Expression |
+| Analysis | Differential Expression Analysis |
 
 **Dataset:** [GSE24177 – NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE24177)
 
@@ -61,7 +62,7 @@ Each experimental group contains two biological replicates.
 
 ### Differential Expression Analysis
 - Perform differential expression analysis using the Bioconductor `limma` package.
-- Estimate gene expression differences between experimental conditions.
+- Estimate expression differences between experimental conditions.
 - Calculate moderated statistical significance.
 - Apply Benjamini-Hochberg multiple testing correction.
 - Identify upregulated and downregulated probes.
@@ -78,7 +79,7 @@ Each experimental group contains two biological replicates.
 - Visualize mean expression levels.
 - Generate PCA plots.
 - Visualize sample correlations.
-- Plot top differentially expressed candidates.
+- Plot top differentially expressed probes.
 - Export analysis results as CSV files.
 
 ---
@@ -113,12 +114,73 @@ The current Day 1 moderate drought comparison produced the following results:
 
 The differential expression analysis uses the `limma` statistical framework.
 
+The current exploratory PCA analysis explains:
+
+| Principal Component | Explained Variance |
+|---|---:|
+| PC1 | 59.29% |
+| PC2 | 13.35% |
+| Combined | 72.64% |
+
 Annotated results are available in:
 
 - `results/limma_early_drought_results.csv`
 - `results/limma_early_drought_annotated.csv`
 
-Generated visualizations are stored in `results/figures/`.
+---
+
+## Visualization Gallery
+
+The following figures are generated directly by the project's analysis pipeline.
+
+### Differential Expression Analysis
+
+**Top 10 Upregulated and Downregulated Probes**
+
+<p align="center">
+  <img src="results/figures/top_drought_genes.png" alt="Top differentially expressed probes under moderate drought stress" width="900">
+</p>
+
+### Exploratory Data Analysis
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Principal Component Analysis (PCA)</strong>
+      <br>
+      <img src="results/figures/pca_samples.png" alt="PCA of gene expression samples" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>Sample Correlation</strong>
+      <br>
+      <img src="results/figures/sample_correlation.png" alt="Sample correlation heatmap" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Gene Expression Heatmap</strong>
+      <br>
+      <img src="results/figures/expression_heatmap.png" alt="Expression heatmap of the most variable probes" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>Expression Distribution</strong>
+      <br>
+      <img src="results/figures/expression_distribution.png" alt="Gene expression distribution across samples" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Mean Gene Expression</strong>
+      <br>
+      <img src="results/figures/mean_expression.png" alt="Mean gene expression across samples" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>Exploratory Analysis</strong>
+      <br>
+      Sample-level analysis of gene expression patterns and biological conditions.
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -192,8 +254,8 @@ gene-expression-explorer/
 
 ### Prerequisites
 
-- Python 3.11 or newer
-- R
+- Python 3.11 or newer (tested with Python 3.14.0)
+- R (tested with R 4.6.2)
 - Git
 - Bioconductor `limma` package
 
@@ -314,7 +376,7 @@ Planned development directions include:
 - Analysis of additional drought conditions and experimental time points.
 - Advanced differential expression analysis.
 - Functional enrichment analysis.
-- Gene ontology and biological pathway investigation.
+- Gene Ontology and biological pathway investigation.
 
 ### Machine Learning and Artificial Intelligence
 - Machine learning models for gene expression classification.
