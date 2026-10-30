@@ -1,6 +1,7 @@
 """Input loading and validation for gene-expression tables."""
 
 from pathlib import Path
+import numpy as np
 import pandas as pd
 
 
@@ -23,6 +24,7 @@ def load_expression_data(path: str | Path) -> pd.DataFrame:
         raise ValueError("Gene IDs must not be missing or blank.")
     if frame["gene_id"].duplicated().any():
         raise ValueError("Gene IDs must be unique.")
+
     sample_columns = [column for column in frame.columns if column != "gene_id"]
     if not sample_columns:
         raise ValueError("The CSV must contain at least one sample column.")
@@ -30,7 +32,7 @@ def load_expression_data(path: str | Path) -> pd.DataFrame:
     values = frame[sample_columns].apply(pd.to_numeric, errors="coerce")
     if values.isna().any().any():
         raise ValueError("Expression values must be numeric and must not be missing.")
-    if not values.map(lambda column: column.map(lambda value: pd.notna(value) and abs(value) != float("inf"))).all().all():
+    if not np.isfinite(values.to_numpy(dtype=float)).all():
         raise ValueError("Expression values must be finite numbers.")
 
     values.index = frame["gene_id"].astype(str)
