@@ -1,8 +1,12 @@
 """Unit tests for the expression data loader."""
 
+import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR / "src"))
 
 from data_loader import load_expression_data
 
@@ -35,6 +39,11 @@ class LoadExpressionDataTests(unittest.TestCase):
     def test_rejects_missing_gene_id_column(self):
         path = self.write_csv("S1,S2\n1,2\n")
         with self.assertRaisesRegex(ValueError, "gene_id"):
+            load_expression_data(path)
+
+    def test_rejects_infinite_values(self):
+        path = self.write_csv("gene_id,S1\nGeneA,inf\n")
+        with self.assertRaisesRegex(ValueError, "finite"):
             load_expression_data(path)
 
 
