@@ -1,124 +1,61 @@
-import numpy as np
-import matplotlib.pyplot as plt
+"""Command-line entry point for the Gene Expression Explorer."""
 
-# ==========================================
-# Gene Expression Dataset
-# ==========================================
+from pathlib import Path
+import sys
 
-gene_expression = np.array([
-    [12, 15, 18, 20, 17, 16],
-    [10, 11, 15, 18, 14, 12],
-    [22, 25, 30, 28, 24, 26],
-    [14, 16, 15, 17, 18, 16],
-    [30, 35, 40, 38, 36, 34]
-])
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR / "src"))
 
-print("Gene Expression Data:\n")
-print(gene_expression)
+import pandas as pd
+from data_loader import load_expression_data
+from visualization import plot_mean_expression, plot_expression_heatmap
 
-# ==========================================
-# Dataset Information
-# ==========================================
 
-print("\n========== Dataset Information ==========")
+def main() -> None:
+    data_path = ROOT_DIR / "data" / "sample_gene_expression.csv"
+    output_dir = ROOT_DIR / "results" / "figures"
 
-print("Shape:", gene_expression.shape)
-print("Dimensions:", gene_expression.ndim)
-print("Data Type:", gene_expression.dtype)
-print("Size:", gene_expression.size)
+    try:
+        expression = load_expression_data(data_path)
+    except (FileNotFoundError, ValueError, pd.errors.ParserError) as error:
+        print(f"Could not load expression data: {error}", file=sys.stderr)
+        raise SystemExit(1) from error
 
-# ==========================================
-# Gene Statistics
-# ==========================================
+    print("\n=== Gene Expression Explorer ===")
+    print(f"Genes: {expression.shape[0]}")
+    print(f"Samples: {expression.shape[1]}")
+    print("\nExpression matrix:")
+    print(expression)
 
-gene_mean = np.mean(gene_expression, axis=0)
+    means = expression.mean(axis=1).sort_values(ascending=False)
+    standard_deviations = expression.std(axis=1, ddof=1).fillna(0)
 
-print("\n========== Gene Statistics ==========")
-print("Average Gene Expression:")
-print(gene_mean)
+    print("\nMean expression per gene (descending):")
+    print(means.round(3).to_string())
+    print("\nStandard deviation per gene:")
+    print(standard_deviations.round(3).to_string())
 
-# ==========================================
-# Patient Statistics
-# ==========================================
+    threshold = 20.0
+    selected = means[means > threshold]
+    print(f"\nGenes with mean expression > {threshold:g}:")
+    print(selected.to_string() if not selected.empty else "No genes passed the threshold.")
 
-patient_mean = np.mean(gene_expression, axis=1)
+    minimum = expression.min().min()
+    maximum = expression.max().max()
+    normalized = (
+        expression * 0.0
+        if maximum == minimum
+        else (expression - minimum) / (maximum - minimum)
+    )
 
-print("\n========== Patient Statistics ==========")
-print("Average Expression Per Patient:")
-print(patient_mean)
+    print("\nMin–max normalized expression (first 5 genes):")
+    print(normalized.head().round(3).to_string())
 
-highest_patient = np.argmax(patient_mean)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plot_mean_expression(means, output_dir / "mean_expression.png")
+    plot_expression_heatmap(expression, output_dir / "expression_heatmap.png")
+    print(f"\nCharts saved to: {output_dir.relative_to(ROOT_DIR)}")
 
-print(
-    f"\nPatient with Highest Average Expression: "
-    f"Patient {highest_patient + 1}"
-)
 
-# ==========================================
-# High Expression Values
-# ==========================================
-
-high_expression = gene_expression[gene_expression > 25]
-
-print("\n========== High Expression Values ==========")
-print(high_expression)
-
-# ==========================================
-# Data Normalization
-# ==========================================
-
-normalized_expression = (
-    gene_expression - np.min(gene_expression)
-) / (
-    np.max(gene_expression) - np.min(gene_expression)
-)
-
-print("\n========== Normalized Data ==========")
-print(normalized_expression)
-
-print("\nMinimum Value:", np.min(normalized_expression))
-print("Maximum Value:", np.max(normalized_expression))
-
-# ==========================================
-# Gene Selection
-# ==========================================
-
-selected_genes = gene_mean > 20
-
-print("\n========== Gene Selection ==========")
-print("Genes with Mean Expression > 20:")
-print(selected_genes)
-
-gene_indices = np.where(gene_mean > 20)
-
-print("\nSelected Gene Indices:")
-print(gene_indices)
-
-# ==========================================
-# Visualization
-# ==========================================
-
-gene_labels = [
-    "Gene1",
-    "Gene2",
-    "Gene3",
-    "Gene4",
-    "Gene5",
-    "Gene6"
-]
-
-plt.figure(figsize=(8, 5))
-
-plt.bar(gene_labels, gene_mean)
-
-plt.title("Average Gene Expression")
-plt.xlabel("Genes")
-plt.ylabel("Expression Level")
-
-plt.tight_layout()
-
-plt.savefig("gene_expression_plot.png")
-
-plt.show()
-
-print("\nGraph saved as: gene_expression_plot.png")
+if __name__ == "__main__":
+    main()
