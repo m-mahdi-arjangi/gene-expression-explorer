@@ -1,0 +1,529 @@
+{
+    "result": [
+        {
+            "description": "\"Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a metal ion stimulus.\" [GOC:sm]",
+            "effective_domain_size": 15832,
+            "goshv": 13808,
+            "intersection_size": 4,
+            "intersections": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [
+                    "IEP"
+                ],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [],
+                [],
+                []
+            ],
+            "name": "response to metal ion",
+            "native": "GO:0010038",
+            "p_value": 0.02017488040473787,
+            "parents": [
+                "GO:0042221"
+            ],
+            "precision": 0.16,
+            "query": "query_1",
+            "query_size": 25,
+            "recall": 0.021739130434782608,
+            "significant": true,
+            "source": "GO:BP",
+            "term_size": 184,
+            "source_order": 3685,
+            "group_id": 1
+        },
+        {
+            "description": "\"Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cadmium (Cd) ion stimulus.\" [GOC:ai]",
+            "effective_domain_size": 15832,
+            "goshv": 21602,
+            "intersection_size": 3,
+            "intersections": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [
+                    "IEP"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "name": "response to cadmium ion",
+            "native": "GO:0046686",
+            "p_value": 0.02017488040473787,
+            "parents": [
+                "GO:0010038"
+            ],
+            "precision": 0.12,
+            "query": "query_1",
+            "query_size": 25,
+            "recall": 0.05172413793103448,
+            "significant": true,
+            "source": "GO:BP",
+            "term_size": 58,
+            "source_order": 11479,
+            "group_id": 1
+        },
+        {
+            "description": "\"Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.\" [GOC:ai, GOC:bf]",
+            "effective_domain_size": 15832,
+            "goshv": 22599,
+            "intersection_size": 17,
+            "intersections": [
+                [],
+                [
+                    "IMP"
+                ],
+                [],
+                [
+                    "IMP"
+                ],
+                [],
+                [],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [
+                    "IEP"
+                ],
+                [
+                    "IMP",
+                    "IEP"
+                ],
+                [
+                    "IMP",
+                    "IEA"
+                ],
+                [
+                    "IEP"
+                ],
+                [
+                    "IMP",
+                    "IEP",
+                    "TAS",
+                    "IEA"
+                ],
+                [
+                    "IMP"
+                ],
+                [
+                    "IEA"
+                ],
+                [],
+                [
+                    "IEP",
+                    "IEA"
+                ],
+                [
+                    "IEA"
+                ],
+                [],
+                [
+                    "IEP"
+                ],
+                [
+                    "IEP",
+                    "IEA"
+                ],
+                [
+                    "IEP",
+                    "IEA"
+                ],
+                [],
+                [],
+                [
+                    "IEP"
+                ],
+                [],
+                [
+                    "IEA"
+                ],
+                []
+            ],
+            "name": "response to stimulus",
+            "native": "GO:0050896",
+            "p_value": 0.02017488040473787,
+            "parents": [
+                "GO:0008150"
+            ],
+            "precision": 0.68,
+            "query": "query_1",
+            "query_size": 25,
+            "recall": 0.0034288019362646227,
+            "significant": true,
+            "source": "GO:BP",
+            "term_size": 4958,
+            "source_order": 12476,
+            "group_id": 2
+        },
+        {
+            "description": "\"The hydrolysis of proteins into smaller polypeptides and/or amino acids by cleavage of their peptide bonds.\" [GOC:bf, GOC:mah]",
+            "effective_domain_size": 15832,
+            "goshv": 12246,
+            "intersection_size": 5,
+            "intersections": [
+                [],
+                [],
+                [],
+                [
+                    "IDA",
+                    "IEA"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "name": "proteolysis",
+            "native": "GO:0006508",
+            "p_value": 0.04903518355645853,
+            "parents": [
+                "GO:0019538"
+            ],
+            "precision": 0.2,
+            "query": "query_1",
+            "query_size": 25,
+            "recall": 0.01059322033898305,
+            "significant": true,
+            "source": "GO:BP",
+            "term_size": 472,
+            "source_order": 2123,
+            "group_id": 3
+        },
+        {
+            "description": "\"Any process that modulates the frequency, rate or extent of a molecular function, an elemental biological activity occurring at the molecular level, such as catalysis or binding.\" [GOC:isa_complete]",
+            "effective_domain_size": 15832,
+            "goshv": 24909,
+            "intersection_size": 3,
+            "intersections": [
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IDA",
+                    "IEA"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IDA"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "IEA"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "name": "regulation of molecular function",
+            "native": "GO:0065009",
+            "p_value": 0.04903518355645853,
+            "parents": [
+                "GO:0065007"
+            ],
+            "precision": 0.12,
+            "query": "query_1",
+            "query_size": 25,
+            "recall": 0.027777777777777776,
+            "significant": true,
+            "source": "GO:BP",
+            "term_size": 108,
+            "source_order": 14786,
+            "group_id": 4
+        }
+    ],
+    "meta": {
+        "query_metadata": {
+            "queries": {
+                "query_1": [
+                    "AT1G02850",
+                    "AT1G07430",
+                    "AT1G17745",
+                    "AT1G20160",
+                    "AT1G47960",
+                    "AT1G49450",
+                    "AT1G68570",
+                    "AT1G70830",
+                    "AT1G79520",
+                    "AT2G04160",
+                    "AT2G25625",
+                    "AT2G38870",
+                    "AT2G46680",
+                    "AT3G11410",
+                    "AT3G48350",
+                    "AT3G53980",
+                    "AT3G56080",
+                    "AT3G56240",
+                    "AT4G01610",
+                    "AT4G14020",
+                    "AT4G15210",
+                    "AT4G23670",
+                    "AT4G25100",
+                    "AT5G03190",
+                    "AT5G24160",
+                    "AT5G24380",
+                    "AT5G43450",
+                    "AT5G51890",
+                    "AT5G61820"
+                ]
+            },
+            "organism": "athaliana",
+            "all_results": false,
+            "ordered": false,
+            "no_iea": false,
+            "sources": [
+                "GO:BP"
+            ],
+            "combined": false,
+            "aresolve": {},
+            "numeric_ns": "ENTREZGENE_ACC",
+            "domain_scope": "custom_annotated",
+            "measure_underrepresentation": false,
+            "significance_threshold_method": "fdr",
+            "user_threshold": 0.05,
+            "no_evidences": false,
+            "highlight": null
+        },
+        "result_metadata": {
+            "GO:BP": {
+                "domain_size": 21844,
+                "number_of_terms": 24546,
+                "threshold": null
+            }
+        },
+        "genes_metadata": {
+            "failed": [],
+            "ambiguous": {},
+            "duplicates": [],
+            "query": {
+                "query_1": {
+                    "mapping": {
+                        "AT1G02850": [
+                            "AT1G02850"
+                        ],
+                        "AT1G07430": [
+                            "AT1G07430"
+                        ],
+                        "AT1G17745": [
+                            "AT1G17745"
+                        ],
+                        "AT1G20160": [
+                            "AT1G20160"
+                        ],
+                        "AT1G47960": [
+                            "AT1G47960"
+                        ],
+                        "AT1G49450": [
+                            "AT1G49450"
+                        ],
+                        "AT1G68570": [
+                            "AT1G68570"
+                        ],
+                        "AT1G70830": [
+                            "AT1G70830"
+                        ],
+                        "AT1G79520": [
+                            "AT1G79520"
+                        ],
+                        "AT2G04160": [
+                            "AT2G04160"
+                        ],
+                        "AT2G25625": [
+                            "AT2G25625"
+                        ],
+                        "AT2G38870": [
+                            "AT2G38870"
+                        ],
+                        "AT2G46680": [
+                            "AT2G46680"
+                        ],
+                        "AT3G11410": [
+                            "AT3G11410"
+                        ],
+                        "AT3G48350": [
+                            "AT3G48350"
+                        ],
+                        "AT3G53980": [
+                            "AT3G53980"
+                        ],
+                        "AT3G56080": [
+                            "AT3G56080"
+                        ],
+                        "AT3G56240": [
+                            "AT3G56240"
+                        ],
+                        "AT4G01610": [
+                            "AT4G01610"
+                        ],
+                        "AT4G14020": [
+                            "AT4G14020"
+                        ],
+                        "AT4G15210": [
+                            "AT4G15210"
+                        ],
+                        "AT4G23670": [
+                            "AT4G23670"
+                        ],
+                        "AT4G25100": [
+                            "AT4G25100"
+                        ],
+                        "AT5G03190": [
+                            "AT5G03190"
+                        ],
+                        "AT5G24160": [
+                            "AT5G24160"
+                        ],
+                        "AT5G24380": [
+                            "AT5G24380"
+                        ],
+                        "AT5G43450": [
+                            "AT5G43450"
+                        ],
+                        "AT5G51890": [
+                            "AT5G51890"
+                        ],
+                        "AT5G61820": [
+                            "AT5G61820"
+                        ]
+                    },
+                    "ensgs": [
+                        "AT1G02850",
+                        "AT1G07430",
+                        "AT1G17745",
+                        "AT1G20160",
+                        "AT1G47960",
+                        "AT1G49450",
+                        "AT1G68570",
+                        "AT1G70830",
+                        "AT1G79520",
+                        "AT2G04160",
+                        "AT2G25625",
+                        "AT2G38870",
+                        "AT2G46680",
+                        "AT3G11410",
+                        "AT3G48350",
+                        "AT3G53980",
+                        "AT3G56080",
+                        "AT3G56240",
+                        "AT4G01610",
+                        "AT4G14020",
+                        "AT4G15210",
+                        "AT4G23670",
+                        "AT4G25100",
+                        "AT5G03190",
+                        "AT5G24160",
+                        "AT5G24380",
+                        "AT5G43450",
+                        "AT5G51890",
+                        "AT5G61820"
+                    ]
+                }
+            }
+        },
+        "timestamp": "2026-11-03T08:22:47.298419+00:00",
+        "version": "e114_eg62_p19_9dc92ac8"
+    }
+}

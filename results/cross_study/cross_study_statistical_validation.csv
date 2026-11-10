@@ -1,0 +1,2 @@
+common_tested_universe,significant_GSE24177,significant_GSE273926,observed_overlap,expected_overlap,fold_enrichment,hypergeometric_p,overlap_fisher_odds_ratio,overlap_fisher_p,up_up,up_down,down_up,down_down,direction_fisher_odds_ratio,direction_fisher_p
+20409,192,607,52,5.710421872703219,9.106157331136737,3.373683833057496e-35,13.158610038610039,3.373683833057496e-35,29,2,5,16,46.4,2.2612380762724736e-07

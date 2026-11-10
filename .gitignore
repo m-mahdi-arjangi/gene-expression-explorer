@@ -26,3 +26,26 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Testing and development caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# R temporary plots
+Rplots.pdf
+
+# Backup files
+*.bak
+*.swp
+
+# Local diagnostic output
+project_structure.txt

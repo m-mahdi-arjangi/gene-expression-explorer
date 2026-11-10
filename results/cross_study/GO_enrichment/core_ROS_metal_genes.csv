@@ -1,0 +1,9 @@
+﻿Gene,gene_description,logFC_GSE24177,FDR_GSE24177,logFC_GSE273926,FDR_GSE273926,regulation_GSE24177,regulation_GSE273926,direction_relation
+AT1G08830,"CSD1 (COPPER/ZINC SUPEROXIDE DISMUTASE 1); copper, zinc superoxide dismutase",-2.063323661,0.0114668635752362,-1.43056292290078,2.8799595847942304e-17,downregulated,downregulated,same_direction
+AT1G12520,CCS1 (copper chaperone for superoxide dismutase 1); superoxide dismutase copper chaperone,-2.0702194745,0.0018134753826152,-1.2716399791497,1.84105368769968e-22,downregulated,downregulated,same_direction
+AT1G75040,PR5 (PATHOGENESIS-RELATED GENE 5),-1.2099977075,0.021136194317104,-0.667753235017412,0.0110757818995689,downregulated,downregulated,same_direction
+AT2G28190,"CSD2 (COPPER/ZINC SUPEROXIDE DISMUTASE 2); copper, zinc superoxide dismutase",-3.406326815,0.0007223456002998,-1.77198005723845,2.04180751040132e-56,downregulated,downregulated,same_direction
+AT3G56240,CCH (COPPER CHAPERONE),1.217695799,0.0208942944457796,0.969434359822725,2.0932459424476e-15,upregulated,upregulated,same_direction
+AT4G23670,major latex protein-related / MLP-related,0.698801870000002,0.0468438221171781,0.74124873716647,2.37294014158728e-08,upregulated,upregulated,same_direction
+AT4G25100,FSD1 (FE SUPEROXIDE DISMUTASE 1); iron superoxide dismutase,1.4776418485,0.0311412724075846,0.470657220784512,0.0019968608194161,upregulated,upregulated,same_direction
+AT5G24380,YSL2 (YELLOW STRIPE LIKE 2); oligopeptide transporter,1.2045835375,0.0249109358705225,1.52675271638963,7.25667948502938e-16,upregulated,upregulated,same_direction
