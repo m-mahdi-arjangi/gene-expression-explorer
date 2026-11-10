@@ -1,0 +1,15 @@
+Table_S4_column,GSM,condition,preparation,replicate,experiment_round,fastq_filename
+U_WW_1-1,GSM8439682,control,undigested,1,experiment_1,WW_leaf_1_2.fq
+U_WW_2-1,GSM8439683,control,undigested,2,experiment_2,WW_leaf_2_1.fq
+U_WW_2-2,GSM8439684,control,undigested,3,experiment_2,WW_leaf_2_2.fq
+U_MD_1-1,GSM8439685,mild_drought,undigested,1,experiment_1,DR_leaf_1_2.fq
+U_MD_2-1,GSM8439686,mild_drought,undigested,2,experiment_2,DR_leaf_2_1.fq
+U_MD_2-2,GSM8439687,mild_drought,undigested,3,experiment_2,DR_leaf_2_2.fq
+D_WW_1,GSM8439688,control,digested,1,experiment_1,WW_prot_1.fq
+D_WW_2,GSM8439689,control,digested,2,experiment_2,WW_prot_2.fq
+D_MD_1,GSM8439690,mild_drought,digested,1,experiment_1,DR_prot_1.fq
+D_MD_2,GSM8439691,mild_drought,digested,2,experiment_2,DR_prot_2.fq
+FD_WW_1,GSM8439692,control,fixed_digested,1,experiment_1,WW_protact_1.fq
+FD_WW_2,GSM8439693,control,fixed_digested,2,experiment_2,WW_protact_2.fq
+FD_MD_1,GSM8439694,mild_drought,fixed_digested,1,experiment_1,DR_protact_1.fq
+FD_MD_2,GSM8439695,mild_drought,fixed_digested,2,experiment_2,DR_protact_2.fq

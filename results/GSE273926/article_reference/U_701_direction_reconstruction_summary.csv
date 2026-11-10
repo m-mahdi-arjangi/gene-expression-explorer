@@ -1,0 +1,4 @@
+sample_type,genes_compared,same_direction,opposite_direction,unresolved
+U,701,701,0,0
+D,701,505,196,0
+FD,701,661,39,1

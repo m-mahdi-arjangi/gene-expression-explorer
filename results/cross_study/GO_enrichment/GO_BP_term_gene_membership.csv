@@ -1,0 +1,359 @@
+﻿gene_set,GO_ID,GO_term,adjusted_p_value,gene_id,evidence_codes
+Conserved 45,GO:0006801,superoxide metabolic process,1.990555423198607e-05,AT1G08830,IEA
+Conserved 45,GO:0006801,superoxide metabolic process,1.990555423198607e-05,AT1G12520,IEA
+Conserved 45,GO:0006801,superoxide metabolic process,1.990555423198607e-05,AT2G28190,IEA
+Conserved 45,GO:0006801,superoxide metabolic process,1.990555423198607e-05,AT4G25100,IEA
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT1G08830,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT1G75040,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT2G28190,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT3G56240,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT4G23670,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT4G25100,IEP
+Conserved 45,GO:0010038,response to metal ion,7.338084959222814e-05,AT5G24380,IEP
+Conserved 45,GO:0019430,removal of superoxide radicals,0.0002756696437283942,AT1G08830,IEA
+Conserved 45,GO:0019430,removal of superoxide radicals,0.0002756696437283942,AT2G28190,IEA
+Conserved 45,GO:0019430,removal of superoxide radicals,0.0002756696437283942,AT4G25100,IEA
+Conserved 45,GO:0071451,cellular response to superoxide,0.0002756696437283942,AT1G08830,IEA
+Conserved 45,GO:0071451,cellular response to superoxide,0.0002756696437283942,AT2G28190,IEA
+Conserved 45,GO:0071451,cellular response to superoxide,0.0002756696437283942,AT4G25100,IEA
+Conserved 45,GO:0071450,cellular response to oxygen radical,0.0002756696437283942,AT1G08830,IEA
+Conserved 45,GO:0071450,cellular response to oxygen radical,0.0002756696437283942,AT2G28190,IEA
+Conserved 45,GO:0071450,cellular response to oxygen radical,0.0002756696437283942,AT4G25100,IEA
+Conserved 45,GO:0000303,response to superoxide,0.00028406947234379767,AT1G08830,IEA
+Conserved 45,GO:0000303,response to superoxide,0.00028406947234379767,AT2G28190,IEA
+Conserved 45,GO:0000303,response to superoxide,0.00028406947234379767,AT4G25100,IEA
+Conserved 45,GO:0046688,response to copper ion,0.00028406947234379767,AT1G08830,IEP
+Conserved 45,GO:0046688,response to copper ion,0.00028406947234379767,AT2G28190,IEP
+Conserved 45,GO:0046688,response to copper ion,0.00028406947234379767,AT4G25100,IEP
+Conserved 45,GO:0000305,response to oxygen radical,0.00028406947234379767,AT1G08830,IEA
+Conserved 45,GO:0000305,response to oxygen radical,0.00028406947234379767,AT2G28190,IEA
+Conserved 45,GO:0000305,response to oxygen radical,0.00028406947234379767,AT4G25100,IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G06830,IGI
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G07430,IMP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G08830,IEP;TAS;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G20160,IMP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G70830,IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G75040,IGI;IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT1G75750,IDA;IMP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G04160,IEP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G25625,IMP;IEP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G28190,IDA;IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G38310,IDA;IGI;ISS;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G38870,IMP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G40400,IMP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT2G46680,IEP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT3G11410,IMP;IEP;TAS;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT3G48350,IMP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT3G53980,IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT3G56240,IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT3G62150,IDA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT4G01610,IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT4G15210,IEP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT4G23670,IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT4G25100,IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT5G24380,IEP
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT5G49910,IEP;IEA
+Conserved 45,GO:0050896,response to stimulus,0.0005451768514695005,AT5G51890,IEA
+Conserved 45,GO:0046686,response to cadmium ion,0.0005451768514695005,AT1G75040,IEP
+Conserved 45,GO:0046686,response to cadmium ion,0.0005451768514695005,AT3G56240,IEP
+Conserved 45,GO:0046686,response to cadmium ion,0.0005451768514695005,AT4G23670,IEP
+Conserved 45,GO:0046686,response to cadmium ion,0.0005451768514695005,AT4G25100,IEP
+Conserved 45,GO:0010039,response to iron ion,0.0005451768514695005,AT1G08830,IEP
+Conserved 45,GO:0010039,response to iron ion,0.0005451768514695005,AT2G28190,IEP
+Conserved 45,GO:0010039,response to iron ion,0.0005451768514695005,AT5G24380,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT1G07430,IMP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT1G08830,IEP;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT1G20160,IMP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT1G75040,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT1G75750,IDA;IMP;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G04160,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G25625,IMP;IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G28190,IEP;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G38310,IDA;IGI;ISS;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G40400,IMP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT2G46680,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT3G11410,IMP;IEP;TAS;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT3G56240,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT3G62150,IDA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT4G23670,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT4G25100,IEP;IEA
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT5G24380,IEP
+Conserved 45,GO:0042221,response to chemical,0.0005890366050570517,AT5G51890,IEA
+Conserved 45,GO:0071457,cellular response to ozone,0.0006109031937030791,AT1G08830,IEP
+Conserved 45,GO:0071457,cellular response to ozone,0.0006109031937030791,AT2G28190,IEP
+Conserved 45,GO:0072593,reactive oxygen species metabolic process,0.0013202570179996376,AT1G08830,IEA
+Conserved 45,GO:0072593,reactive oxygen species metabolic process,0.0013202570179996376,AT1G12520,IEA
+Conserved 45,GO:0072593,reactive oxygen species metabolic process,0.0013202570179996376,AT2G28190,IEA
+Conserved 45,GO:0072593,reactive oxygen species metabolic process,0.0013202570179996376,AT4G25100,IEA
+Conserved 45,GO:0072593,reactive oxygen species metabolic process,0.0013202570179996376,AT5G51890,IEA
+Conserved 45,GO:0034614,cellular response to reactive oxygen species,0.0016023445838137705,AT1G08830,IEP;IEA
+Conserved 45,GO:0034614,cellular response to reactive oxygen species,0.0016023445838137705,AT2G28190,IEP;IEA
+Conserved 45,GO:0034614,cellular response to reactive oxygen species,0.0016023445838137705,AT4G25100,IEA
+Conserved 45,GO:0010193,response to ozone,0.0016023445838137705,AT1G08830,IEP
+Conserved 45,GO:0010193,response to ozone,0.0016023445838137705,AT2G28190,IEP
+Conserved 45,GO:0010193,response to ozone,0.0016023445838137705,AT4G25100,IEP
+Conserved 45,GO:0071493,cellular response to UV-B,0.0016023445838137705,AT1G08830,IEP
+Conserved 45,GO:0071493,cellular response to UV-B,0.0016023445838137705,AT2G28190,IEP
+Conserved 45,GO:0006878,intracellular copper ion homeostasis,0.0021954682650844035,AT1G12520,TAS
+Conserved 45,GO:0006878,intracellular copper ion homeostasis,0.0021954682650844035,AT3G56240,IMP
+Conserved 45,GO:0071329,cellular response to sucrose stimulus,0.0049678924723605905,AT1G08830,IEP
+Conserved 45,GO:0071329,cellular response to sucrose stimulus,0.0049678924723605905,AT2G28190,IEP
+Conserved 45,GO:0071324,cellular response to disaccharide stimulus,0.005889941461024891,AT1G08830,IEP
+Conserved 45,GO:0071324,cellular response to disaccharide stimulus,0.005889941461024891,AT2G28190,IEP
+Conserved 45,GO:0071484,cellular response to light intensity,0.006533919040804124,AT1G08830,IEP
+Conserved 45,GO:0071484,cellular response to light intensity,0.006533919040804124,AT2G28190,IEP
+Conserved 45,GO:0055070,copper ion homeostasis,0.006533919040804124,AT1G12520,TAS
+Conserved 45,GO:0055070,copper ion homeostasis,0.006533919040804124,AT3G56240,IMP
+Conserved 45,GO:0098869,cellular oxidant detoxification,0.006557653032849958,AT1G08830,IEA
+Conserved 45,GO:0098869,cellular oxidant detoxification,0.006557653032849958,AT2G28190,IEA
+Conserved 45,GO:0098869,cellular oxidant detoxification,0.006557653032849958,AT4G25100,IEA
+Conserved 45,GO:0098869,cellular oxidant detoxification,0.006557653032849958,AT5G51890,IEA
+Conserved 45,GO:0097237,cellular response to toxic substance,0.008029033818162805,AT1G08830,IEA
+Conserved 45,GO:0097237,cellular response to toxic substance,0.008029033818162805,AT2G28190,IEA
+Conserved 45,GO:0097237,cellular response to toxic substance,0.008029033818162805,AT4G25100,IEA
+Conserved 45,GO:0097237,cellular response to toxic substance,0.008029033818162805,AT5G51890,IEA
+Conserved 45,GO:0035195,miRNA-mediated post-transcriptional gene silencing,0.008029033818162805,AT1G08830,IEP
+Conserved 45,GO:0035195,miRNA-mediated post-transcriptional gene silencing,0.008029033818162805,AT2G28190,IEP
+Conserved 45,GO:1990748,cellular detoxification,0.008029033818162805,AT1G08830,IEA
+Conserved 45,GO:1990748,cellular detoxification,0.008029033818162805,AT2G28190,IEA
+Conserved 45,GO:1990748,cellular detoxification,0.008029033818162805,AT4G25100,IEA
+Conserved 45,GO:1990748,cellular detoxification,0.008029033818162805,AT5G51890,IEA
+Conserved 45,GO:0034599,cellular response to oxidative stress,0.008427706853154146,AT1G08830,IEP;IEA
+Conserved 45,GO:0034599,cellular response to oxidative stress,0.008427706853154146,AT2G28190,IEP;IEA
+Conserved 45,GO:0034599,cellular response to oxidative stress,0.008427706853154146,AT4G25100,IEA
+Conserved 45,GO:0034644,cellular response to UV,0.008453442135761722,AT1G08830,IEP
+Conserved 45,GO:0034644,cellular response to UV,0.008453442135761722,AT2G28190,IEP
+Conserved 45,GO:0010224,response to UV-B,0.008994434448155224,AT1G08830,IEP
+Conserved 45,GO:0010224,response to UV-B,0.008994434448155224,AT1G75040,IGI
+Conserved 45,GO:0010224,response to UV-B,0.008994434448155224,AT2G28190,IEP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT1G07430,IMP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT1G08830,IEP;IEA
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT1G20160,IMP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT1G75750,IDA;IMP;IEA
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT2G25625,IMP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT2G28190,IEP;IEA
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT2G38310,IDA;IGI;ISS;IEA
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT2G40400,IMP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT2G46680,IEP
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT3G11410,IMP;IEP;TAS;IEA
+Conserved 45,GO:1901700,response to oxygen-containing compound,0.01142605650726607,AT4G25100,IEP;IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT1G07430,IMP
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT1G08830,IEP;IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT1G75750,IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT2G28190,IEP;IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT2G38310,IDA;IGI;ISS;IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT3G11410,IMP;TAS;IEA
+Conserved 45,GO:1901701,cellular response to oxygen-containing compound,0.019757516764859193,AT4G25100,IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT1G06830,IGI
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT1G08830,IEP;TAS;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT1G20160,IMP
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT1G70830,IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT1G75040,IEP;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT2G25625,IMP;IEP
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT2G28190,IDA;IEP;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT2G38870,IMP;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT2G46680,IEP
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT3G11410,IMP;IEP
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT3G53980,IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT4G01610,IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT4G23670,IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT4G25100,IEP;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT5G49910,IEP;IEA
+Conserved 45,GO:0006950,response to stress,0.027326824274429427,AT5G51890,IEA
+Conserved 45,GO:0009411,response to UV,0.029437311484428245,AT1G08830,IEP
+Conserved 45,GO:0009411,response to UV,0.029437311484428245,AT1G75040,IGI
+Conserved 45,GO:0009411,response to UV,0.029437311484428245,AT2G28190,IEP
+Conserved 45,GO:0006979,response to oxidative stress,0.03027021647557388,AT1G08830,IEP;TAS;IEA
+Conserved 45,GO:0006979,response to oxidative stress,0.03027021647557388,AT2G25625,IMP;IEP
+Conserved 45,GO:0006979,response to oxidative stress,0.03027021647557388,AT2G28190,IDA;IEP;IEA
+Conserved 45,GO:0006979,response to oxidative stress,0.03027021647557388,AT4G25100,IEP;IEA
+Conserved 45,GO:0006979,response to oxidative stress,0.03027021647557388,AT5G51890,IEA
+Conserved 45,GO:0065009,regulation of molecular function,0.030900143913148874,AT1G47960,IDA;IEA
+Conserved 45,GO:0065009,regulation of molecular function,0.030900143913148874,AT3G11410,IDA
+Conserved 45,GO:0065009,regulation of molecular function,0.030900143913148874,AT4G01610,IEA
+Conserved 45,GO:0098754,detoxification,0.03240573035547596,AT1G08830,IEA
+Conserved 45,GO:0098754,detoxification,0.03240573035547596,AT2G28190,IEA
+Conserved 45,GO:0098754,detoxification,0.03240573035547596,AT4G25100,IEA
+Conserved 45,GO:0098754,detoxification,0.03240573035547596,AT5G51890,IEA
+Conserved 45,GO:0062197,cellular response to chemical stress,0.03240573035547596,AT1G08830,IEP;IEA
+Conserved 45,GO:0062197,cellular response to chemical stress,0.03240573035547596,AT2G28190,IEP;IEA
+Conserved 45,GO:0062197,cellular response to chemical stress,0.03240573035547596,AT4G25100,IEA
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT1G08830,IEP
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT1G20160,IMP
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT1G70830,IEA
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT1G75040,IEP;IEA
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT2G38870,IMP
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT3G11410,IMP
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT3G53980,IEA
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT4G01610,IEA
+Conserved 45,GO:0006952,defense response,0.03585885220141781,AT4G23670,IEA
+Conserved 45,GO:0000302,response to reactive oxygen species,0.04190213172590992,AT1G08830,IEP;IEA
+Conserved 45,GO:0000302,response to reactive oxygen species,0.04190213172590992,AT2G28190,IEP;IEA
+Conserved 45,GO:0000302,response to reactive oxygen species,0.04190213172590992,AT4G25100,IEP;IEA
+Conserved 45,GO:0071472,cellular response to salt stress,0.04215589870501026,AT1G08830,IEP
+Conserved 45,GO:0071472,cellular response to salt stress,0.04215589870501026,AT2G28190,IEP
+Conserved 45,GO:0009636,response to toxic substance,0.04215589870501026,AT1G08830,IEA
+Conserved 45,GO:0009636,response to toxic substance,0.04215589870501026,AT2G28190,IEA
+Conserved 45,GO:0009636,response to toxic substance,0.04215589870501026,AT4G25100,IEA
+Conserved 45,GO:0009636,response to toxic substance,0.04215589870501026,AT5G51890,IEA
+Conserved 45,GO:0035194,regulatory ncRNA-mediated post-transcriptional gene silencing,0.04215589870501026,AT1G08830,IEP
+Conserved 45,GO:0035194,regulatory ncRNA-mediated post-transcriptional gene silencing,0.04215589870501026,AT2G28190,IEP
+Conserved 45,GO:0034763,negative regulation of transmembrane transport,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0044092,negative regulation of molecular function,0.04215589870501026,AT1G47960,IDA;IEA
+Conserved 45,GO:0044092,negative regulation of molecular function,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0032413,negative regulation of ion transmembrane transporter activity,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0032410,negative regulation of transporter activity,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0010360,negative regulation of anion channel activity,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0034766,negative regulation of monoatomic ion transmembrane transport,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:1903792,negative regulation of monoatomic anion transport,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:1902039,negative regulation of seed dormancy process,0.04215589870501026,AT1G07430,IMP
+Conserved 45,GO:1903960,negative regulation of anion transmembrane transport,0.04215589870501026,AT3G11410,IDA
+Conserved 45,GO:0009642,response to light intensity,0.04398882712384581,AT1G08830,IEP
+Conserved 45,GO:0009642,response to light intensity,0.04398882712384581,AT2G28190,IEP
+Conserved 45,GO:0009642,response to light intensity,0.04398882712384581,AT4G25100,IEP
+Shared up 29,GO:0010038,response to metal ion,0.02017488040473787,AT3G56240,IEP
+Shared up 29,GO:0010038,response to metal ion,0.02017488040473787,AT4G23670,IEP
+Shared up 29,GO:0010038,response to metal ion,0.02017488040473787,AT4G25100,IEP
+Shared up 29,GO:0010038,response to metal ion,0.02017488040473787,AT5G24380,IEP
+Shared up 29,GO:0046686,response to cadmium ion,0.02017488040473787,AT3G56240,IEP
+Shared up 29,GO:0046686,response to cadmium ion,0.02017488040473787,AT4G23670,IEP
+Shared up 29,GO:0046686,response to cadmium ion,0.02017488040473787,AT4G25100,IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT1G07430,IMP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT1G20160,IMP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT1G70830,IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT2G04160,IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT2G25625,IMP;IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT2G38870,IMP;IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT2G46680,IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT3G11410,IMP;IEP;TAS;IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT3G48350,IMP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT3G53980,IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT3G56240,IEP;IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT4G01610,IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT4G15210,IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT4G23670,IEP;IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT4G25100,IEP;IEA
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT5G24380,IEP
+Shared up 29,GO:0050896,response to stimulus,0.02017488040473787,AT5G51890,IEA
+Shared up 29,GO:0006508,proteolysis,0.04903518355645853,AT1G20160,IDA;IEA
+Shared up 29,GO:0006508,proteolysis,0.04903518355645853,AT2G04160,IEA
+Shared up 29,GO:0006508,proteolysis,0.04903518355645853,AT2G38870,IEA
+Shared up 29,GO:0006508,proteolysis,0.04903518355645853,AT3G48350,IEA
+Shared up 29,GO:0006508,proteolysis,0.04903518355645853,AT4G01610,IEA
+Shared up 29,GO:0065009,regulation of molecular function,0.04903518355645853,AT1G47960,IDA;IEA
+Shared up 29,GO:0065009,regulation of molecular function,0.04903518355645853,AT3G11410,IDA
+Shared up 29,GO:0065009,regulation of molecular function,0.04903518355645853,AT4G01610,IEA
+Shared down 16,GO:0006801,superoxide metabolic process,7.151755036206059e-05,AT1G08830,IEA
+Shared down 16,GO:0006801,superoxide metabolic process,7.151755036206059e-05,AT1G12520,IEA
+Shared down 16,GO:0006801,superoxide metabolic process,7.151755036206059e-05,AT2G28190,IEA
+Shared down 16,GO:0071457,cellular response to ozone,0.00028890590959084584,AT1G08830,IEP
+Shared down 16,GO:0071457,cellular response to ozone,0.00028890590959084584,AT2G28190,IEP
+Shared down 16,GO:0071493,cellular response to UV-B,0.0006413103636828379,AT1G08830,IEP
+Shared down 16,GO:0071493,cellular response to UV-B,0.0006413103636828379,AT2G28190,IEP
+Shared down 16,GO:0000303,response to superoxide,0.0011614471569114779,AT1G08830,IEA
+Shared down 16,GO:0000303,response to superoxide,0.0011614471569114779,AT2G28190,IEA
+Shared down 16,GO:0010224,response to UV-B,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0010224,response to UV-B,0.0011614471569114779,AT1G75040,IGI
+Shared down 16,GO:0010224,response to UV-B,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0046688,response to copper ion,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0046688,response to copper ion,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0000305,response to oxygen radical,0.0011614471569114779,AT1G08830,IEA
+Shared down 16,GO:0000305,response to oxygen radical,0.0011614471569114779,AT2G28190,IEA
+Shared down 16,GO:0019430,removal of superoxide radicals,0.0011614471569114779,AT1G08830,IEA
+Shared down 16,GO:0019430,removal of superoxide radicals,0.0011614471569114779,AT2G28190,IEA
+Shared down 16,GO:0071324,cellular response to disaccharide stimulus,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0071324,cellular response to disaccharide stimulus,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0071484,cellular response to light intensity,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0071484,cellular response to light intensity,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0071329,cellular response to sucrose stimulus,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0071329,cellular response to sucrose stimulus,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0071451,cellular response to superoxide,0.0011614471569114779,AT1G08830,IEA
+Shared down 16,GO:0071451,cellular response to superoxide,0.0011614471569114779,AT2G28190,IEA
+Shared down 16,GO:0034644,cellular response to UV,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0034644,cellular response to UV,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0071450,cellular response to oxygen radical,0.0011614471569114779,AT1G08830,IEA
+Shared down 16,GO:0071450,cellular response to oxygen radical,0.0011614471569114779,AT2G28190,IEA
+Shared down 16,GO:0035195,miRNA-mediated post-transcriptional gene silencing,0.0011614471569114779,AT1G08830,IEP
+Shared down 16,GO:0035195,miRNA-mediated post-transcriptional gene silencing,0.0011614471569114779,AT2G28190,IEP
+Shared down 16,GO:0009411,response to UV,0.0017006016434272997,AT1G08830,IEP
+Shared down 16,GO:0009411,response to UV,0.0017006016434272997,AT1G75040,IGI
+Shared down 16,GO:0009411,response to UV,0.0017006016434272997,AT2G28190,IEP
+Shared down 16,GO:0010039,response to iron ion,0.0019204707331543682,AT1G08830,IEP
+Shared down 16,GO:0010039,response to iron ion,0.0019204707331543682,AT2G28190,IEP
+Shared down 16,GO:0072593,reactive oxygen species metabolic process,0.004501272761584651,AT1G08830,IEA
+Shared down 16,GO:0072593,reactive oxygen species metabolic process,0.004501272761584651,AT1G12520,IEA
+Shared down 16,GO:0072593,reactive oxygen species metabolic process,0.004501272761584651,AT2G28190,IEA
+Shared down 16,GO:0034614,cellular response to reactive oxygen species,0.004501272761584651,AT1G08830,IEP;IEA
+Shared down 16,GO:0034614,cellular response to reactive oxygen species,0.004501272761584651,AT2G28190,IEP;IEA
+Shared down 16,GO:0010193,response to ozone,0.004501272761584651,AT1G08830,IEP
+Shared down 16,GO:0010193,response to ozone,0.004501272761584651,AT2G28190,IEP
+Shared down 16,GO:0010038,response to metal ion,0.006400820260653976,AT1G08830,IEP
+Shared down 16,GO:0010038,response to metal ion,0.006400820260653976,AT1G75040,IEP
+Shared down 16,GO:0010038,response to metal ion,0.006400820260653976,AT2G28190,IEP
+Shared down 16,GO:0035194,regulatory ncRNA-mediated post-transcriptional gene silencing,0.006400820260653976,AT1G08830,IEP
+Shared down 16,GO:0035194,regulatory ncRNA-mediated post-transcriptional gene silencing,0.006400820260653976,AT2G28190,IEP
+Shared down 16,GO:0071472,cellular response to salt stress,0.006400820260653976,AT1G08830,IEP
+Shared down 16,GO:0071472,cellular response to salt stress,0.006400820260653976,AT2G28190,IEP
+Shared down 16,GO:0010608,post-transcriptional regulation of gene expression,0.00785449466438671,AT1G08830,IEP
+Shared down 16,GO:0010608,post-transcriptional regulation of gene expression,0.00785449466438671,AT2G28190,IEP
+Shared down 16,GO:0010608,post-transcriptional regulation of gene expression,0.00785449466438671,AT4G16390,IMP
+Shared down 16,GO:0071322,cellular response to carbohydrate stimulus,0.009197901944054586,AT1G08830,IEP
+Shared down 16,GO:0071322,cellular response to carbohydrate stimulus,0.009197901944054586,AT2G28190,IEP
+Shared down 16,GO:0071470,cellular response to osmotic stress,0.009932436921833598,AT1G08830,IEP
+Shared down 16,GO:0071470,cellular response to osmotic stress,0.009932436921833598,AT2G28190,IEP
+Shared down 16,GO:0016441,post-transcriptional gene silencing,0.010295975383058634,AT1G08830,IEP
+Shared down 16,GO:0016441,post-transcriptional gene silencing,0.010295975383058634,AT2G28190,IEP
+Shared down 16,GO:0034599,cellular response to oxidative stress,0.01300015912482698,AT1G08830,IEP;IEA
+Shared down 16,GO:0034599,cellular response to oxidative stress,0.01300015912482698,AT2G28190,IEP;IEA
+Shared down 16,GO:0009744,response to sucrose,0.014600664814906345,AT1G08830,IEP
+Shared down 16,GO:0009744,response to sucrose,0.014600664814906345,AT2G28190,IEP
+Shared down 16,GO:0034285,response to disaccharide,0.014946441541687956,AT1G08830,IEP
+Shared down 16,GO:0034285,response to disaccharide,0.014946441541687956,AT2G28190,IEP
+Shared down 16,GO:0071280,cellular response to copper ion,0.02106971910246887,AT1G08830,IEP
+Shared down 16,GO:1901701,cellular response to oxygen-containing compound,0.02289292521981906,AT1G08830,IEP;IEA
+Shared down 16,GO:1901701,cellular response to oxygen-containing compound,0.02289292521981906,AT1G75750,IEA
+Shared down 16,GO:1901701,cellular response to oxygen-containing compound,0.02289292521981906,AT2G28190,IEP;IEA
+Shared down 16,GO:1901701,cellular response to oxygen-containing compound,0.02289292521981906,AT2G38310,IDA;IGI;ISS;IEA
+Shared down 16,GO:0062197,cellular response to chemical stress,0.03222665558300077,AT1G08830,IEP;IEA
+Shared down 16,GO:0062197,cellular response to chemical stress,0.03222665558300077,AT2G28190,IEP;IEA
+Shared down 16,GO:0009741,response to brassinosteroid,0.03222665558300077,AT1G75750,IMP
+Shared down 16,GO:0009741,response to brassinosteroid,0.03222665558300077,AT2G40400,IMP
+Shared down 16,GO:0080171,lytic vacuole organization,0.03222665558300077,AT5G40450,IMP
+Shared down 16,GO:0006878,intracellular copper ion homeostasis,0.03330083945371807,AT1G12520,TAS
+Shared down 16,GO:0071482,cellular response to light stimulus,0.03330083945371807,AT1G08830,IEP
+Shared down 16,GO:0071482,cellular response to light stimulus,0.03330083945371807,AT2G28190,IEP
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT1G08830,IEP;IEA
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT1G75040,IEP
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT1G75750,IDA;IMP;IEA
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT2G28190,IEP;IEA
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT2G38310,IDA;IGI;ISS;IEA
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT2G40400,IMP
+Shared down 16,GO:0042221,response to chemical,0.03330083945371807,AT3G62150,IDA
+Shared down 16,GO:0031047,regulatory ncRNA-mediated gene silencing,0.03330083945371807,AT1G08830,IEP
+Shared down 16,GO:0031047,regulatory ncRNA-mediated gene silencing,0.03330083945371807,AT2G28190,IEP
+Shared down 16,GO:0060919,auxin import into cell,0.03330083945371807,AT3G62150,IDA
+Shared down 16,GO:0000302,response to reactive oxygen species,0.03376388955395724,AT1G08830,IEP;IEA
+Shared down 16,GO:0000302,response to reactive oxygen species,0.03376388955395724,AT2G28190,IEP;IEA
+Shared down 16,GO:0071478,cellular response to radiation,0.03376388955395724,AT1G08830,IEP
+Shared down 16,GO:0071478,cellular response to radiation,0.03376388955395724,AT2G28190,IEP
+Shared down 16,GO:0098869,cellular oxidant detoxification,0.03715454243274879,AT1G08830,IEA
+Shared down 16,GO:0098869,cellular oxidant detoxification,0.03715454243274879,AT2G28190,IEA
+Shared down 16,GO:0046148,pigment biosynthetic process,0.03789826677864541,AT1G75040,IEP
+Shared down 16,GO:0046148,pigment biosynthetic process,0.03789826677864541,AT2G40400,IMP
+Shared down 16,GO:0009642,response to light intensity,0.03917407503204627,AT1G08830,IEP
+Shared down 16,GO:0009642,response to light intensity,0.03917407503204627,AT2G28190,IEP
+Shared down 16,GO:0097237,cellular response to toxic substance,0.04011452937368095,AT1G08830,IEA
+Shared down 16,GO:0097237,cellular response to toxic substance,0.04011452937368095,AT2G28190,IEA
+Shared down 16,GO:1990748,cellular detoxification,0.04011452937368095,AT1G08830,IEA
+Shared down 16,GO:1990748,cellular detoxification,0.04011452937368095,AT2G28190,IEA
+Shared down 16,GO:0070887,cellular response to chemical stimulus,0.042382825391302725,AT1G08830,IEP;IEA
+Shared down 16,GO:0070887,cellular response to chemical stimulus,0.042382825391302725,AT1G75750,IEA
+Shared down 16,GO:0070887,cellular response to chemical stimulus,0.042382825391302725,AT2G28190,IEP;IEA
+Shared down 16,GO:0070887,cellular response to chemical stimulus,0.042382825391302725,AT2G38310,IDA;IGI;ISS;IEA
+Shared down 16,GO:0070887,cellular response to chemical stimulus,0.042382825391302725,AT3G62150,IDA
+Shared down 16,GO:1901700,response to oxygen-containing compound,0.04434566719825746,AT1G08830,IEP;IEA
+Shared down 16,GO:1901700,response to oxygen-containing compound,0.04434566719825746,AT1G75750,IDA;IMP;IEA
+Shared down 16,GO:1901700,response to oxygen-containing compound,0.04434566719825746,AT2G28190,IEP;IEA
+Shared down 16,GO:1901700,response to oxygen-containing compound,0.04434566719825746,AT2G38310,IDA;IGI;ISS;IEA
+Shared down 16,GO:1901700,response to oxygen-containing compound,0.04434566719825746,AT2G40400,IMP
+Shared down 16,GO:0055070,copper ion homeostasis,0.04772942030247815,AT1G12520,TAS

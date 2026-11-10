@@ -1,0 +1,4 @@
+﻿gene_set,input_genes,genes_in_background,background_size,returned_terms,significance_threshold,correction_method,source
+conserved_45,45,45,20409,52,0.05,fdr,GO:BP
+shared_up_29,29,29,20409,5,0.05,fdr,GO:BP
+shared_down_16,16,16,20409,50,0.05,fdr,GO:BP
