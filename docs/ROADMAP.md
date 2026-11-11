@@ -135,6 +135,178 @@ Machine learning development should begin only after the dataset, validation str
 - [ ] Prepare a scientific manuscript
 - [ ] Evaluate suitable journals
 
+## Detailed Research Execution Plan
+
+This section expands the existing roadmap into concrete, testable research milestones. Each milestone must be completed and validated before dependent work begins.
+
+### Research Question
+
+Which drought-responsive gene signatures are reproducible across independent Arabidopsis transcriptomic studies, how do their expression patterns vary across tissues and cellular populations, and can these signatures support generalizable and interpretable drought-response prediction?
+
+The project aims to investigate cross-study reproducibility, biological context, regulatory hypotheses, and predictive generalization without overstating exploratory findings.
+
+### Milestone 1 - Complete SPL7 and Regulatory-Gene Reproducibility
+
+- [ ] Implement a standalone SPL7 analysis script.
+- [ ] Load GSE24177 annotated Limma results.
+- [ ] Load GSE273926 normalized expression for the six primary undigested samples.
+- [ ] Load published GSE273926 Table S5 U results.
+- [ ] Reconstruct the documented SPL7 statistics and descriptive expression summaries.
+- [ ] Reconstruct the curated 15-gene regulatory candidate panel.
+- [ ] Validate gene identifiers, duplicate records, missing values, and required columns.
+- [ ] Preserve the distinction between descriptive expression ratios and statistical log2 fold changes.
+- [ ] Generate reproducible CSV outputs.
+- [ ] Compare reconstructed outputs with the documented historical results.
+- [ ] Add dedicated unit tests.
+- [ ] Document inputs, outputs, methods, and limitations.
+
+Completion criteria:
+The historical SPL7 investigation can be reconstructed from saved inputs using a standalone script, with automated validation and no dependence on shell history.
+
+### Milestone 2 - Configuration Management and Pipeline Automation
+
+- [ ] Introduce centralized configuration files.
+- [ ] Separate dataset paths, sample definitions, thresholds, and analysis parameters from source code.
+- [ ] Define consistent input and output directory conventions.
+- [ ] Build a central end-to-end analysis entry point.
+- [ ] Define execution order and dependencies between analysis stages.
+- [ ] Add structured logging.
+- [ ] Implement clear error handling and failure reporting.
+- [ ] Support dry-run and explicit write modes where appropriate.
+- [ ] Protect previously validated outputs from unintended overwriting.
+- [ ] Document pipeline execution and configuration options.
+
+Completion criteria:
+The major saved analysis workflows can be executed through one documented pipeline using explicit configuration and reproducible inputs.
+
+### Milestone 3 - Independent Drought Dataset Integration
+
+- [ ] Search GEO and other suitable public repositories for additional Arabidopsis drought transcriptomics datasets.
+- [ ] Identify an initial shortlist of approximately 3-5 candidate datasets.
+- [ ] Define dataset inclusion and exclusion criteria.
+- [ ] Evaluate organism, tissue, developmental stage, drought treatment, duration, and biological replicates.
+- [ ] Assess sequencing or microarray technology and data quality.
+- [ ] Record accession numbers and original dataset provenance.
+- [ ] Extract and validate sample metadata.
+- [ ] Harmonize gene identifiers across studies.
+- [ ] Document preprocessing and normalization procedures.
+- [ ] Separate compatible and incompatible experimental comparisons.
+- [ ] Preserve study-level information throughout integration.
+
+Completion criteria:
+An independently sourced multi-study dataset collection is available with validated metadata, documented preprocessing, and explicit comparability limitations.
+
+The target number of datasets is a search objective, not a quota. Unsuitable datasets must not be included merely to increase dataset count.
+
+### Milestone 4 - Effect-Size-Based Meta-analysis
+
+- [ ] Define comparable biological contrasts across independent datasets.
+- [ ] Obtain complete tested-gene differential expression statistics where available.
+- [ ] Reconstruct or retrieve effect sizes and their standard errors.
+- [ ] Validate gene-level identifier compatibility.
+- [ ] Define and document the meta-analysis gene universe.
+- [ ] Evaluate fixed-effect and random-effects models where assumptions permit.
+- [ ] Calculate study-level heterogeneity statistics, including Q, I-squared, and tau-squared where appropriate.
+- [ ] Identify genes with consistent effect directions across studies.
+- [ ] Investigate genes with heterogeneous or discordant responses.
+- [ ] Perform sensitivity analyses.
+- [ ] Compare results under alternative inclusion and background definitions.
+- [ ] Validate prioritized gene signatures using independent datasets.
+
+Completion criteria:
+A reproducible effect-size-based meta-analysis is available with documented assumptions, uncertainty estimates, heterogeneity assessment, and sensitivity analyses.
+
+Important limitation:
+Published DEG-only tables must not be treated as complete statistical result tables. Formal meta-analysis requires appropriate effect-size and uncertainty information for the genes being analyzed. The existing cross-study overlap analysis is not itself a formal meta-analysis.
+
+### Milestone 5 - Single-cell and Cellular Context Integration
+
+- [ ] Investigate the associated GSE273033 single-cell RNA-seq dataset.
+- [ ] Review raw data availability, sample metadata, biological replicates, and experimental design.
+- [ ] Establish a reproducible single-cell preprocessing workflow.
+- [ ] Evaluate cell quality and filtering criteria.
+- [ ] Review or validate cell-type annotations.
+- [ ] Map the conserved cross-study gene signature to single-cell populations.
+- [ ] Investigate cell-type-specific expression patterns.
+- [ ] Compare candidate drought-responsive signatures across cellular populations.
+- [ ] Evaluate pseudobulk approaches using biological replicates where appropriate.
+- [ ] Compare bulk and single-cell findings.
+- [ ] Investigate which expression patterns are shared or cell-type-specific.
+- [ ] Document differences between bulk and single-cell measurements.
+
+Completion criteria:
+The project provides a validated cellular-context analysis of selected drought-responsive signatures, with appropriate treatment of biological replicates and cell-level observations.
+
+### Milestone 6 - Regulatory and Network Biology
+
+- [ ] Expand the SPL7 and regulatory-gene candidate investigation.
+- [ ] Investigate HY5 and additional stress-associated transcription factors.
+- [ ] Identify candidate transcription factor-target relationships using suitable external resources.
+- [ ] Evaluate evidence supporting proposed regulatory relationships.
+- [ ] Integrate validated gene annotations and functional relationships.
+- [ ] Investigate ROS and copper-homeostasis pathways.
+- [ ] Compare regulatory candidates across independent drought datasets.
+- [ ] Explore co-expression and regulatory network construction where the available data support it.
+- [ ] Evaluate network robustness and reproducibility.
+- [ ] Distinguish experimentally supported interactions from predicted associations and correlations.
+- [ ] Avoid interpreting network connectivity as proof of causality.
+
+Completion criteria:
+A documented regulatory and functional network analysis is available, with explicit evidence levels and reproducible construction procedures.
+
+### Milestone 7 - Machine Learning and Explainable AI
+
+Machine learning development should begin only after sufficient independent datasets, validated preprocessing, and an appropriate biological prediction task have been established.
+
+- [ ] Define a biologically meaningful prediction target.
+- [ ] Build a sufficiently large and validated multi-study expression dataset.
+- [ ] Establish appropriate baseline models.
+- [ ] Define study-aware data splitting strategies.
+- [ ] Implement Leave-One-Study-Out validation.
+- [ ] Prevent study-level data leakage during preprocessing and feature selection.
+- [ ] Evaluate models on independent external datasets.
+- [ ] Assess performance, calibration, and generalization.
+- [ ] Investigate feature importance and SHAP.
+- [ ] Evaluate stability of selected gene signatures across validation folds and studies.
+- [ ] Compare predictive models with simpler statistical baselines.
+- [ ] Document limitations and potential sources of bias.
+
+Completion criteria:
+Predictive models demonstrate independently evaluated performance and interpretable results without relying on random sample splitting that leaks study-specific information.
+
+### Milestone 8 - Scientific Reporting and Research Publication
+
+- [ ] Conduct a systematic literature review.
+- [ ] Build a comparison matrix of existing studies and their contributions.
+- [ ] Identify a clearly defined research gap.
+- [ ] Assess scientific novelty of the proposed findings.
+- [ ] Define explicit research hypotheses.
+- [ ] Perform independent validation of prioritized biological findings.
+- [ ] Prepare publication-quality figures.
+- [ ] Generate reproducible HTML research reports.
+- [ ] Document methods, datasets, statistical parameters, and limitations.
+- [ ] Prepare a scientific manuscript.
+- [ ] Identify appropriate journals and evaluate publication requirements.
+
+Completion criteria:
+The research contribution is clearly distinguished from prior work, independently validated where possible, and supported by reproducible analyses and transparent reporting.
+
+### Research Dependency and Validation Gates
+
+The following dependencies must be respected:
+
+1. SPL7 reproducibility precedes its use in expanded regulatory analyses.
+2. Configuration management and pipeline automation precede large-scale automated dataset integration.
+3. Dataset quality assessment precedes cross-study integration.
+4. Complete and comparable effect-size information precedes formal meta-analysis.
+5. Validated cellular data and annotations precede biological interpretation of single-cell results.
+6. Sufficient independent studies and a defined prediction task precede machine learning.
+7. Independent validation and literature-based novelty assessment precede publication claims.
+
+Research findings must be categorized as exploratory, computationally supported, independently validated, or experimentally validated.
+
+No computational association, enrichment result, predictive feature, or network relationship should be presented as experimentally established causality without appropriate supporting evidence.
+
 ## Important Scientific Principles
 
 - Public datasets must retain their original provenance.
